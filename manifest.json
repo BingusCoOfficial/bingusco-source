@@ -1,0 +1,107 @@
+{
+    "name": "BingusCO Official App",
+    "description": "The official app for all things BingusCO including our products, our help and support and information about us.",
+    "short_name": "BingusCO",
+    "start_url": "./home",
+    "display": "standalone",
+    "display_override": ["window-controls-overlay"],
+    "orientation": "landscape",
+    "theme_color": "#7847b7",
+    "background_color": "#7847b7",
+    "lang": "en",
+    "prefer_related_applications": false,
+    "scope": "https://bingusco.xyz",
+    "protocol_handlers": [
+        {
+            "protocol": "web+bingusco",
+            "url": "https://bingusco.xyz/%s"
+        }
+    ],
+    "scope_extensions": [
+        {"origin": "*.bingusco.xyz"}
+    ],
+    "edge_side_panel": {
+        "preferred_width": 500
+    },
+    "handle_links": "preferred",
+    "screenshots" : [
+        {
+            "src": "screenshots/1.png",
+            "sizes": "1365x607",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "The BingusCO home page.",
+            "platform": "chromeos"
+        },
+        {
+            "src": "screenshots/2.png",
+            "sizes": "1365x607",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "The BingusCO about us page.",
+            "platform": "chromeos"
+        },
+        {
+            "src": "screenshots/3.png",
+            "sizes": "1365x607",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "The BingusCO help and support page.",
+            "platform": "chromeos"
+        },
+        {
+            "src": "screenshots/4.png",
+            "sizes": "1365x607",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "The BingusCO products and services page.",
+            "platform": "chromeos"
+        }
+    ],
+    "categories": ["business", "entertainment", "productivity", "utilities"],
+    "dir": "ltr",
+    "icons": [
+        {
+            "src": "images/icon-32.png",
+            "sizes": "32x32",
+            "type": "image/png",
+            "purpose": "any"
+        }, 
+        {
+            "src": "images/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ],
+    "id": "/?version=2",
+    "launch_handler": {
+        "client_mode": ["navigate-existing, navigate-new"]
+    },
+    "shortcuts": [
+        {
+            "name": "About Us",
+            "short_name": "About Us",
+            "description": "Find out more about BingusCO and its products!",
+            "url": "/about-us",
+            "icons": [{ "src": "images/icon-32.png", "sizes": "32x32" }]
+        },
+        {
+            "name": "Help and Support",
+            "short_name": "Help and Support",
+            "description": "Get help with any problem(s) you may have about our website/services!",
+            "url": "/help-and-support",
+            "icons": [{ "src": "images/icon-32.png", "sizes": "32x32" }]
+        },
+        {
+            "name": "Our Products",
+            "short_name": "Products",
+            "description": "View our great products and services!",
+            "url": "/about-us",
+            "icons": [{ "src": "images/icon-32.png", "sizes": "32x32" }]
+        }
+    ],
+    "serviceworker": {
+        "src": "sw.js?v=2"
+    }
+}

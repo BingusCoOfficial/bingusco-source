@@ -1,0 +1,37 @@
+body, html {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    user-select: none;
+}
+
+#data {
+    display: none;
+}
+
+#dash, #users {
+    text-align: center;
+}
+
+#dashboard {
+    overflow-y:scroll;
+    max-height: 75vh;
+}
+
+#userImg3 {
+    height: 5vh;
+    filter: invert(0.5);
+    vertical-align: middle;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    padding-right: 50px
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(grey, purple,  #a867bf);
+    border-radius: 20px;
+}

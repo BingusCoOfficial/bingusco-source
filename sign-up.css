@@ -1,0 +1,68 @@
+@keyframes notif {
+    0% {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    10% {
+        -webkit-transform: none;
+        transform: none;
+    }
+    90% {
+        -webkit-transform: none;
+        transform: none;
+    }
+    100% {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+}
+
+#notification {
+    position: absolute;
+    top: 0;
+    font-size: 3vh;
+    width: 100vw;
+    background-color: green;
+    text-align: center;
+    color: white;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+h1 {
+    text-align:center;
+    font-family:loudbeats;
+}
+
+@font-face {
+    src: url("LoudBeats.woff2");
+    font-family:loudbeats;
+}
+
+#sign {
+    text-align:center;
+}
+
+input {
+    width: 35%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2.5px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: url("images/cursor_for_links.png"), grab;
+}
+
+input[type=submit] {
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2.5px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: url("images/cursor_for_links.png"), grab;
+}
+
+

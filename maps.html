@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="maps.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">  
+  <script src="https://unpkg.com/three@0.126.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"></script>
+  <meta name="keywords" content="bingusco.xyz, bingus, binguscooffical, bingusco, bingusofficial, mrhdumpty, mr h dumpty, software, OS, computers, computer, dingusco, dingusco.xyz, humancoder1123, bingustools, map, projection, earth, explore">
+</head>
+<body>
+  <fieldset>
+    <label>Select projection</label>
+    <select id="projection" name="projection">
+      <option value="mercator" selected="">Mercator</option>
+      <option value="globe">Globe</option>
+      <option value="albers">Albers</option>
+      <option value="equalEarth">Equal Earth</option>
+      <option value="equirectangular">Equirectangular</option>
+      <option value="lambertConformalConic">
+      Lambert Conformal Conic
+      </option>
+      <option value="naturalEarth">Natural Earth</option>
+      <option value="winkelTripel">Winkel Tripel</option>
+    </select>
+  </fieldset>
+  <div id="map"></div>
+  <div id="bg"></div>
+  <div id="custom-alert" class="modal">
+    <div class="modal-content">
+      <h2>Choose your country:</h2>
+      <div class="options">
+        <label><input type="radio" name="country" value="Scotland"> Scotland</label><br>
+        <label><input type="radio" name="country" value="England"> England</label><br>
+        <label><input type="radio" name="country" value="Wales"> Wales</label><br>
+        <label><input type="radio" name="country" value="Ireland"> Ireland</label><br>
+      </div>
+      <button onclick="handleCustomAlert()">OK</button>
+    </div>
+  </div>
+  <script src="./maps.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta name="theme-color" content="#7847b7">
+        <script src="/socket.io/socket.io.js"></script>
+        <link rel="manifest" href="/manifest.json">
+        <link href="nav.css" rel="stylesheet" type="text/css">
+        <link rel="preload" as="font" href="./LoudBeats.woff2" type="font/woff2" crossorigin="anonymous">
+        <link rel="icon" href="images/favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div id="overlay"></div>
+        <div id="navbar">
+            <div id="bingusco">
+                <div id="toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="/home">
+                    <img title="Say hi to Bingus!" id="image" src="images/favicon.png" alt="BingusCO Logo!" width="auto" height="auto">
+                    <span title="BingusCO!">
+                        <span id="part1">BingusCO</span>
+                        <span id="part2">©</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="menu-panel" id="menuPanel">
+            <iframe title="The homepage!" class="embed" src="./embed?text=Home&link=./home"></iframe>
+            <iframe title="Our Products!" class="embed" src="./embed?text=Products&link=./products"></iframe>
+            <iframe title="About Us!" class="embed" src="./embed?text=About+Us&link=./about-us"></iframe>
+            <iframe title="Help and Support!" class="embed" src="./embed?text=Help+and+Support&link=./help-and-support"></iframe>
+        </div>
+        <div class="menu-panel2" id="menuPanel2">
+            <div id="widget">
+                <img src="images/user.png" id="userImg" alt="user profile picture">
+                <span id="user">Not logged in</span>
+            </div>
+            <iframe title="Sign Up!" class="embed" src="./embed?text=Sign Up&link=./sign-up"></iframe>
+            <iframe title="Log In!" class="embed" src="./embed?text=Log In&link=./log-in"></iframe>
+        </div>
+        <div id="socials">
+            <a href="https://discord.gg/epYby84uZU">
+                <img src="images/discord.png" alt="Discord logo">
+                Discord
+            </a>
+            <a href="https://www.tiktok.com/@BingusCO">
+                <img src="images/tiktok.png" alt="TikTok logo">
+                TikTok
+            </a>
+            <a href="https://x.com/BingusCO_XYZ">
+                <img src="images/x.png" alt="X Logo" id="x">
+                X (Formerly Twitter)
+            </a>
+        </div>
+        <footer id="page-footer">Copyright © 2022-2023 BingusCO</footer>
+    </body>
+    <script src="nav.js"></script>
+</html>

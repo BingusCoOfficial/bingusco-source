@@ -1,0 +1,49 @@
+body{
+  background: #f5f5f5;
+  color: #303030;
+  font-family: 'Segoe UI';
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+label{
+  width: 5%;
+  display: inline-block;
+  text-align: right;
+}
+
+input{
+  background: #e5e5e5;
+  color: #303030;
+  font-size: 120%;
+  border: none;
+}
+
+.Message{
+  color: #a0a0a0;
+}
+
+#Main{
+  background: #a0a0a0;
+  border-radius: 1%;
+  padding-left: 1%;
+}
+
+#Title{
+  font-size: 300%;
+}
+
+#LeaveButton {
+  background-image: url("exit.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+  
+#Chat {
+  max-height: 300px; /* Set a maximum height for the chat container */
+  overflow-y: auto; /* Enable vertical scrolling */
+}

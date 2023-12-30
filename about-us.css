@@ -1,0 +1,36 @@
+html, body{
+    height:100vh;
+    user-select: none;
+}
+
+@font-face {
+    font-family: 'loudbeats';
+    src: url(LoudBeats.woff2);
+}
+
+h1, h3, h2 {
+    letter-spacing: 2.5px;
+    font-family: loudbeats;
+    line-height: 3;
+}
+
+#about-us-text {
+    position:absolute;
+    text-align: center;
+    width: 100vw;
+    height: 76.8vh;
+    top: 20vh;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    font-size: 25px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    padding-right: 50px
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(grey, purple,  #a867bf);
+    border-radius: 20px;
+}

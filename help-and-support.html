@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link rel="manifest" href="/manifest.json">
+        <meta charset="UTF-8">
+        <meta name="google" content="notranslate">
+        <meta http-equiv="Content-Language" content="en">
+        <meta name="viewport" content="width=device-width">
+        <meta name="owner" content="Mr H Dumpty">
+        <meta name="keywords" content="bingusco.xyz, bingus, binguscooffical, bingusco, bingusofficial, mrhdumpty, mr h dumpty, software, OS, computers, computer, dingusco, dingusco.xyz, humancoder1123, bingustools, help, support, assistance, live chat, email, contact us">
+        <meta name="description" content="The official website of BingusCO!">
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+        <title>BingusCO Official Website!</title>
+        <link href="help-and-support.css" rel="stylesheet" type="text/css">
+        <link rel="preload" as="font" href="/LoudBeats.woff2" type="font/woff2" crossorigin="anonymous">
+    </head>
+    <body>
+        <div id="nav-placeholder" style="overflow:hidden;"></div>      
+        <div id="notification"></div>
+        <div id="help-and-support">
+            <h1>Help and Support</h1>
+            <div id="content">
+                <div id="email">
+                    <h3>Email</h3>
+                    <p>If you want to ask a question then you can email Bingus at <button><a href="mailto:bingus@bingusco.xyz" target="_blank">bingus@bingusco.xyz</a></button></p>
+                    <p>If you need some help then you can email the support team at <button><a href="mailto:support@bingusco.xyz" target="_blank">support@bingusco.xyz</a></button></p>
+                    <p>If you have a huge problem then you can email the founders at <button><a href="mailto:founders@bingusco.xyz" target="_blank">founders@bingusco.xyz</a></button></p>
+                    <h3>Phone</h3>
+                    <p>For any query or issue you may have, you can call this number: <button><a href="tel:+447398966664">07398 966664</a></button>*</p>
+                    <p>*Call price subject to your provider's cost for normal phone calls.</p>
+                </div>
+                <div id="form">
+                    <h3>Automatic Email Form</h3>
+                    <span>You can also use this form to contact us without logging into your email.</span>
+                    <br> 
+                    <form id="contact-form" action="https://mrhdumpty-external.mrhdumpty.repl.co/captcha" method="POST">
+                        <span>Enter your name:</span>
+                        <input type="text" name="name" id="name" placeholder="Name (So that we can identify you)" autocomplete="name">
+                        <span>Choose a contact method (only fill in one):</span>
+                        <input type="text" name="email" id="email" placeholder="Email (So that we can contact you back)" autocomplete="email">
+                        <span>Or</span>
+                        <input type="text" name="phone" id="phone" placeholder="Phone (So that we can contact you back)" autocomplete="tel">
+                        <span>Type your message:</span>
+                        <input type="text" name="message" id="message" placeholder="Message (What do you want to say?)" autocomplete="off">
+                        <div id="captcha"></div>
+                        <input type="submit">
+                    </form>
+                </div> 
+                <div id="live_chat">
+                    <h3>Live Chat</h3>
+                    <span>To use our live chat service, enter your name and click below.</span>
+                    <form action="https://mrhdumpty-external.mrhdumpty.repl.co/live-chat" method="POST">
+                        <label for="chat_name">Name:</label>
+                        <input type="text" autocomplete="name" placeholder="Enter your name." name=chat_name id="chat_name">
+                        <input type="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="jquery.js"></script>
+        <script src="global.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js?render=6LcUHAwnAAAAANHozL-0bXvrA7Pi04j6SYcGtb3J"></script>
+        <script src="help-and-support.js"></script>
+    </body>
+</html>

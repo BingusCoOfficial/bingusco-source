@@ -1,0 +1,47 @@
+html, body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: loudbeats;
+  src: url("LoudBeats.woff2") format('woff2');
+  font-display: swap;
+}
+
+#welcome_text {
+  font-family: "Lucida Console", "Courier New", monospace;
+  position: absolute;
+  text-align: center;
+  width: 100vw;
+  height: 76.8vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-size: 2vmax;
+  cursor: url("images/cursor.png");
+  top: 20vh;
+}
+
+@media all and (display-mode: fullscreen) {
+  #welcome_text {
+    height: 68vh;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(grey, purple,  #a867bf);
+  border-radius: 20px;
+}
+
+#nav-placeholder {
+  height: 100vh;
+  width: 100vw;
+  marrgin: 0;
+  padding: 0;
+  z-index: 9999999999999;
+}

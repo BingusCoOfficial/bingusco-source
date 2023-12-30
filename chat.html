@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title> BingusCO Chat </title>
+    <meta name = "charset" charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel = "stylesheet" type = "text/css" href = "chat.css">
+    <meta name="keywords" content="bingusco.xyz, bingus, binguscooffical, bingusco, bingusofficial, mrhdumpty, mr h dumpty, software, OS, computers, computer, dingusco, dingusco.xyz, humancoder1123, bingustools, chat, chatrooms">
+    <script src = "chat.js"></script>
+    <script src= "socket.io/socket.io.js"></script>
+  </head>
+  <body onload = "onload()">
+    <div id = "Main">
+      <audio id = "Ding" src = "Ding.mp3"> </audio>
+      <h1 id = "Title"> BingusCO Chat </h1>
+      <div id = "AccessPort">
+        <label id = "NameLabel"> Username:  </label>
+        <input id = "NameInput" type = "text">
+        <br><br>
+        <label id = "IDLabel"> Chatroom: </label>
+        <input id = "IDInput" value = "Room1" type = "text">
+        <input id = "ConnectButton" class = "Button" type = "submit" value = "Connect" onclick = "Connect()">
+      </div>
+      <h2 id="RoomID"> Chatroom : None</h2>
+      <h3 id="UserCount">User Count: 0</h3>
+      <h3 id="UserList">Users in this chatroom:</h3>
+      <div id = "Chat">
+        <p id = "Message0" class = "Message"> - </p>
+        <p id = "Message1" class = "Message"> - </p>
+        <p id = "Message2" class = "Message"> - </p>
+        <p id = "Message3" class = "Message"> - </p>
+        <p id = "Message4" class = "Message"> - </p>
+        <p id = "Message5" class = "Message"> - </p>
+        <p id = "Message6" class = "Message"> - </p>
+        <p id = "Message7" class = "Message"> - </p>
+        <p id = "Message8" class = "Message"> - </p>
+        <p id = "Message9" class = "Message"> - </p>
+        <label id = "MessageLabel"> Message </label>
+        <input id = "ComposedMessage" type = "text">
+        <input type="file" id="AudioInput" accept=".mp3, .ogg, .wav" style="display: none;">
+        <button id="UploadButton" class="Button" onclick="UploadAudio()">Upload Audio</button>
+        <input id = "SendMessage" onclick="Send()" value = "Send" class = "Button" type = "submit">
+      </div>
+      <br><br>
+    </div>
+  </body>
+</html>

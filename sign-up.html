@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up to BingusCO!</title>
+        <script src="/socket.io/socket.io.js"></script>
+        <link href="sign-up.css" rel="stylesheet">
+        <meta name="keywords" content="bingusco.xyz, bingus, binguscooffical, bingusco, bingusofficial, mrhdumpty, mr h dumpty, software, OS, computers, computer, dingusco, dingusco.xyz, humancoder1123, bingustools, sign up, account">
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    </head>
+    <body>
+        <div id="notification"></div>
+        <div id="nav-placeholder"></div>
+        <h1>Sign up to BingusCO!</h1>
+        <div id="sign">
+            <form id="code" style="display:none;">
+                <span>Enter the verification code that was sent to your email.</span>
+                <br>
+                <label for="code">Code</label>
+                <br>
+                <input id="codeInput" type="text" placeholder="Type the verification code" autocomplete="one-time-code">
+                <br>
+                <br>
+                <input type="submit" value="Submit Code">
+            </form>
+            <form id="signup">
+                <label for="email">Email</label>
+                <br>
+                <input id="email" type="text" placeholder="Type an email" autocomplete="email" pattern="^[^\s@]+@([^\s@.,]+\.)+[^\s@.,]{2,}$" title="Please type a valid email address" required>
+                <br>
+                <label for="username">Username</label>
+                <br>
+                <input id="username" type="text" placeholder="Type a username" autocomplete="nickname" pattern="^[a-zA-Z0-9_]+$" title="Letters, numbers, and underscores only" required>
+                <br>
+                <label for="password">Password</label>
+                <br>
+                <input id="password" type="password" placeholder="Type a password" autocomplete="new-password" pattern="^(?=.*[A-Z])(?=.*\d)(?!.*\s).{8,}$" title="Must include at least 8 characters, at least 1 number, at least 1 capital letter and optionally, a symbol" required>
+                <br>
+                <label for="confirm_password">Confirm Password</label>
+                <br>
+                <input id="confirm_password" type="password" placeholder="Re-type your password" autocomplete="new-password" pattern="^(?=.*[A-Z])(?=.*\d)(?!.*\s).{8,}$" title="Must include at least 8 characters, at least 1 number, at least 1 capital letter and optionally, a symbol" required>
+                <br>
+                <input type="submit" id="submit" value="Sign Up">
+            </form>
+            <span>Already have an account? <a href="log-in">Log in</a> here.</span>
+        </div>
+        <script src="jquery.js"></script>
+        <script src="global.js"></script>
+        <script src="sign-up.js"></script>
+    </body>
+</html>

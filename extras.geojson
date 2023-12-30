@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BingusCO Official Headquarters",
+        "type": "office",
+        "color": "#ffffff"
+    },
+      "geometry": {
+        "coordinates": [
+          -3.7916457632272795,
+          56.15042343899606
+        ],
+        "type": "Point"
+      },
+      "id": 0
+    }
+  ]
+}

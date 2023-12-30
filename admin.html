@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Log in to BingusCO Admin!</title>
+        <script src="/socket.io/socket.io.js"></script>
+        <link href="admin.css" rel="stylesheet">
+        <meta name="keywords" content="bingusco.xyz, bingus, binguscooffical, bingusco, bingusofficial, mrhdumpty, mr h dumpty, software, OS, computers, computer, dingusco, dingusco.xyz, humancoder1123, bingustools, login, account">
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    </head>
+    <body>
+        <div id="notification"></div>
+        <div id="nav-placeholder"></div>
+        <h1>Log in to BingusCO Admin!</h1>
+        <div id="log">
+            <form id="login">
+                <label for="username">Username/Email</label>
+                <br>
+                <input id="username" type="text" placeholder="Type a username or email" autocomplete="username" required>
+                <br>
+                <label for="password">Password</label>
+                <br>
+                <input id="password" type="password" placeholder="Type a password" autocomplete="current-password" required>
+                <br>
+                <input type="submit" id="submit" value="Log In">
+            </form>
+        </div>
+        <script src="jquery.js"></script>
+        <script src="global.js"></script>
+        <script src="admin.js"></script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+html, body {
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+  height: 10vh;
+}
+
+#document {
+    width: 98vw;
+    height: 75vh;
+    padding: 10px;
+    overflow: hidden;
+    outline: none;
+}
+
+#document[contenteditable="true"]:empty:before {
+    content: attr(placeholder);
+    color: #888888;
+}
